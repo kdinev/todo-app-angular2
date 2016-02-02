@@ -26,9 +26,7 @@ System.register(['angular2/core'], function(exports_1) {
                 TodoList = __decorate([
                     core_1.Component({
                         selector: 'todo-list',
-                        styles: ["\n    .done-true {\n      text-decoration: line-through;\n      color: grey;\n    }"
-                        ],
-                        template: "\n    <ul class=\"unstyled\">\n      <li *ngFor=\"#todo of todos\">\n        <input type=\"checkbox\" [(ngModel)]=\"todo.done\">\n        <span class=\"done-{{todo.done}}\">{{todo.text}}</span>\n      </li>\n    </ul>"
+                        templateUrl: 'templates/todo-list.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], TodoList);

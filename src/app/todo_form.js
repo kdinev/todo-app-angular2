@@ -34,7 +34,7 @@ System.register(['angular2/core'], function(exports_1) {
                 TodoForm = __decorate([
                     core_1.Component({
                         selector: 'todo-form',
-                        template: "\n    <form (ngSubmit)=\"addTodo()\">\n      <input type=\"text\" [(ngModel)]=\"task\" size=\"30\"\n             placeholder=\"add new todo here\">\n      <input class=\"btn-primary\" type=\"submit\" value=\"add\">\n    </form>"
+                        templateUrl: 'templates/todo-form.html'
                     }), 
                     __metadata('design:paramtypes', [])
                 ], TodoForm);

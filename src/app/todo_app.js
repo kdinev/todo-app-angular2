@@ -51,8 +51,7 @@ System.register(['angular2/core', './todo_list', './todo_form'], function(export
                 TodoApp = __decorate([
                     core_1.Component({
                         selector: 'todo-app',
-                        template: "\n    <h2>Todo</h2>\n    <span>{{remaining}} of {{todos.length}} remaining</span>\n    [ <a (click)=\"archive()\">archive</a> ]\n\n    <todo-list [todos]=\"todos\"></todo-list>\n    <todo-form (newTask)=\"addTask($event)\"></todo-form>",
-                        styles: ['a { cursor: pointer; cursor: hand; }'],
+                        templateUrl: 'templates/todo-app.html',
                         directives: [todo_list_1.TodoList, todo_form_1.TodoForm]
                     }), 
                     __metadata('design:paramtypes', [])
